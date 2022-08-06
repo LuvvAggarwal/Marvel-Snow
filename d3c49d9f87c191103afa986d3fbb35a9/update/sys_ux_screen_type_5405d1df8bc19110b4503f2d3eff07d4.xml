@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="INSERT_OR_UPDATE">
+        <description/>
+        <name>Record Page(task)</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-08-06 17:28:43</sys_created_on>
+        <sys_id>5405d1df8bc19110b4503f2d3eff07d4</sys_id>
+        <sys_name>Record Page(task)</sys_name>
+        <sys_package display_value="Marvel App" source="x_543178_marvel_0">d3c49d9f87c191103afa986d3fbb35a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marvel App">d3c49d9f87c191103afa986d3fbb35a9</sys_scope>
+        <sys_update_name>sys_ux_screen_type_5405d1df8bc19110b4503f2d3eff07d4</sys_update_name>
+    </sys_ux_screen_type>
+    <sys_translated_text action="delete_multiple" query="documentkey=5405d1df8bc19110b4503f2d3eff07d4"/>
+</record_update>

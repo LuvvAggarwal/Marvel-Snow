@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability display_value="Public">1c05d1df52c1911015a3f217fff557d9</applicability>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-08-06 17:28:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1405d1dfa7c19110aa78ce6704557fda</sys_id>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Marvel App" source="x_543178_marvel_0">d3c49d9f87c191103afa986d3fbb35a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marvel App">d3c49d9f87c191103afa986d3fbb35a9</sys_scope>
+        <sys_update_name>m2m_app_config_theme_1405d1dfa7c19110aa78ce6704557fda</sys_update_name>
+        <theme display_value="Light Theme">9c05d1dfdbc19110eb7428aedd6f5ed9</theme>
+        <ux_app_configuration display_value="Marvel App Config">c805d1df87c191103afa986d3fbb35ab</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

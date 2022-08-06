@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Landing Page">d405d1dfe9c19110eef7797afa1b1dd5</macroponent>
+        <name>Launch approve alert </name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+       const modal_payload = {
+            "modalId": "[component-id$='alert_1']",
+            "showModal": true,
+            "displayOptions": null
+        };
+        const OPEN_MODAL = 'MODAL_SELECTED';
+        api.emit(OPEN_MODAL, modal_payload);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-08-06 17:28:45</sys_created_on>
+        <sys_id>9405d1dfaec19110fb642cf26b8698d1</sys_id>
+        <sys_name>Launch approve alert</sys_name>
+        <sys_package display_value="Marvel App" source="x_543178_marvel_0">d3c49d9f87c191103afa986d3fbb35a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marvel App">d3c49d9f87c191103afa986d3fbb35a9</sys_scope>
+        <sys_update_name>sys_ux_client_script_9405d1dfaec19110fb642cf26b8698d1</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

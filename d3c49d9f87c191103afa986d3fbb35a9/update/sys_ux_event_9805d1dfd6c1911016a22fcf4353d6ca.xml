@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>MODAL_SELECTED_RELAY_d405d1dfe9c19110eef7797afa1b1dd5</event_name>
+        <interfaces/>
+        <label>Open or close modal dialog Relay (Landing Page Default)</label>
+        <props>[{"name":"modalId","fieldType":"string","interfaceApiName":"global.modal","label":"Modal"},{"name":"showModal","fieldType":"boolean","interfaceApiName":null,"label":"Open modal dialog"},{"name":"displayOptions","fieldType":"json","interfaceApiName":null,"label":"Display options (advanced)"},{"name":"bare","fieldType":"boolean","interfaceApiName":"global.modal","label":"Use bare modal"},{"name":"viewportElementId","fieldType":"string","interfaceApiName":null,"label":"Viewport ID"},{"name":"viewportRoute","fieldType":"string","interfaceApiName":null,"label":"Viewport Route"},{"name":"viewportFields","fieldType":"json","interfaceApiName":null,"label":"Viewport Fields"}]</props>
+        <required_translations>[ {
+  "message" : "Display options (advanced)",
+  "comment" : ""
+}, {
+  "message" : "Modal",
+  "comment" : ""
+}, {
+  "message" : "Open modal dialog",
+  "comment" : ""
+}, {
+  "message" : "Use bare modal",
+  "comment" : ""
+}, {
+  "message" : "Viewport Fields",
+  "comment" : ""
+}, {
+  "message" : "Viewport ID",
+  "comment" : ""
+}, {
+  "message" : "Viewport Route",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-08-06 17:28:41</sys_created_on>
+        <sys_id>9805d1dfd6c1911016a22fcf4353d6ca</sys_id>
+        <sys_name>Open or close modal dialog Relay (Landing Page Default)</sys_name>
+        <sys_package display_value="Marvel App" source="x_543178_marvel_0">d3c49d9f87c191103afa986d3fbb35a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marvel App">d3c49d9f87c191103afa986d3fbb35a9</sys_scope>
+        <sys_update_name>sys_ux_event_9805d1dfd6c1911016a22fcf4353d6ca</sys_update_name>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=9805d1dfd6c1911016a22fcf4353d6ca"/>
+</record_update>

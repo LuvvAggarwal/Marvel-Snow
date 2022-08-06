@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Landing Page">d405d1dfe9c19110eef7797afa1b1dd5</macroponent>
+        <name>Refresh landing</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    if(event.payload.name !== 'refresh'){
+        return;
+    }
+    api.data.evam_mytasks.refresh();
+    api.data.evam_myrequests.refresh();
+    api.data.hide_content_sets_1.refresh();
+    api.data.hide_content_sets_2.refresh();
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-08-06 17:28:41</sys_created_on>
+        <sys_id>9005d1dfa1c191107b41b1e64ed9d9d1</sys_id>
+        <sys_name>Refresh landing</sys_name>
+        <sys_package display_value="Marvel App" source="x_543178_marvel_0">d3c49d9f87c191103afa986d3fbb35a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marvel App">d3c49d9f87c191103afa986d3fbb35a9</sys_scope>
+        <sys_update_name>sys_ux_client_script_9005d1dfa1c191107b41b1e64ed9d9d1</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Marvel App Config">c805d1df87c191103afa986d3fbb35ab</app_config>
+        <description/>
+        <extension_point/>
+        <fields>sysId,table</fields>
+        <icon/>
+        <name>Record Page(request)</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>record_request</route_type>
+        <screen_type display_value="Record Page(request)">d805d1dfd0c191105e7459ca62484dd2</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-08-06 17:28:44</sys_created_on>
+        <sys_id>d005d1dfa6c191107afd3aaa213426d2</sys_id>
+        <sys_name>Record Page(request)</sys_name>
+        <sys_package display_value="Marvel App" source="x_543178_marvel_0">d3c49d9f87c191103afa986d3fbb35a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marvel App">d3c49d9f87c191103afa986d3fbb35a9</sys_scope>
+        <sys_update_name>sys_ux_app_route_d005d1dfa6c191107afd3aaa213426d2</sys_update_name>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=d005d1dfa6c191107afd3aaa213426d2"/>
+</record_update>

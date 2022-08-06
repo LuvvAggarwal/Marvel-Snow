@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Landing Page">d405d1dfe9c19110eef7797afa1b1dd5</macroponent>
+        <name>My task page redirection</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const {
+        state,
+        emit,
+        data
+    } = api;
+    let sysId = "";
+    let table = "";
+    try {
+        sysId = data.look_up_record_3.result.sysapproval.value;
+        let tableDisplayValue = data.look_up_record_3.result.sysapproval.displayValue;
+        let tableStartsWith = tableDisplayValue.substring(0, 3);
+
+        if (tableStartsWith == "INC") {
+            table = "incident";
+        }else if (tableStartsWith == "RIT") {
+            table = "sc_req_item";
+        } else {
+            table = "task";
+        }
+
+        if (state.taskcard && sysId) {
+            api.setState("taskcard", "");
+            emit('NAV_ITEM_SELECTED', {
+                route: "rec_task",
+                fields: {
+                    table,
+                    sysId,
+                    approvalId: api.state.taskcard
+                }
+            });
+        }
+    } catch (e) {}
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-08-06 17:28:43</sys_created_on>
+        <sys_id>dc05d1df3fc19110ab032878b96abad0</sys_id>
+        <sys_name>My task page redirection</sys_name>
+        <sys_package display_value="Marvel App" source="x_543178_marvel_0">d3c49d9f87c191103afa986d3fbb35a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marvel App">d3c49d9f87c191103afa986d3fbb35a9</sys_scope>
+        <sys_update_name>sys_ux_client_script_dc05d1df3fc19110ab032878b96abad0</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

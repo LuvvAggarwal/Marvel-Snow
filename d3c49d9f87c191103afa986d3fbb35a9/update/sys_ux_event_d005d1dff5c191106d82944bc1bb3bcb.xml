@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>GLIDE_FORM_1_SET_MANDATORY_RELAY_1c05d1df71c191102f3e24ea0363f0cb</event_name>
+        <interfaces/>
+        <label>Glide Form 1 SET_MANDATORY Relay (Tasks Default)</label>
+        <props>[{"name":"fieldName","fieldType":"string","label":"Field Name"},{"name":"mandatory","fieldType":"boolean","label":"Mandatory"}]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-08-06 17:28:42</sys_created_on>
+        <sys_id>d005d1dff5c191106d82944bc1bb3bcb</sys_id>
+        <sys_name>Glide Form 1 SET_MANDATORY Relay (Tasks Default)</sys_name>
+        <sys_package display_value="Marvel App" source="x_543178_marvel_0">d3c49d9f87c191103afa986d3fbb35a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marvel App">d3c49d9f87c191103afa986d3fbb35a9</sys_scope>
+        <sys_update_name>sys_ux_event_d005d1dff5c191106d82944bc1bb3bcb</sys_update_name>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=d005d1dff5c191106d82944bc1bb3bcb"/>
+</record_update>
