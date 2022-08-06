@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_543178_marvel_0.Marvel_API</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Marvel_API</name>
+        <script><![CDATA[var Marvel_API = Class.create();
+Marvel_API.prototype = {
+    initialize: function() {},
+
+    getCharacters: function(hero) {
+        var pub_key = gs.getProperty('x_543178_marvel_0.PUBLIC_KEY');
+        var private_key = gs.getProperty('x_543178_marvel_0.PRIVATE_KEY');
+        var ts = Date.now();
+        var hashString = ts + private_key + pub_key;
+        var digest = new GlideDigest();
+        var hash = digest.getMD5Hex(hashString).toLowerCase();
+        gs.info("Marvel App-hash " + hash);
+        try {
+            var r = new sn_ws.RESTMessageV2('Marvel', 'Characters');
+            r.setQueryParameter('hash', hash);
+            r.setQueryParameter('name', hero);
+            r.setQueryParameter('apikey', pub_key);
+            r.setQueryParameter('ts', ts);
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+            gs.info("Marvel App res " + responseBody);
+        } catch (ex) {
+            var message = ex.message;
+            gs.info("Marvel App " + ex);
+        }
+    },
+
+    type: 'Marvel_API'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-06 18:55:09</sys_created_on>
+        <sys_id>11772553874591103afa986d3fbb35ca</sys_id>
+        <sys_name>Marvel_API</sys_name>
+        <sys_package display_value="Marvel App" source="x_543178_marvel_0">d3c49d9f87c191103afa986d3fbb35a9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Marvel App">d3c49d9f87c191103afa986d3fbb35a9</sys_scope>
+        <sys_update_name>sys_script_include_11772553874591103afa986d3fbb35ca</sys_update_name>
+    </sys_script_include>
+</record_update>

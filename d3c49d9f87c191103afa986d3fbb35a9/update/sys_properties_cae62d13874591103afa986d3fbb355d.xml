@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_543178_marvel_0.PUBLIC_KEY</name>
+        <read_roles/>
+        <suffix>PUBLIC_KEY</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-06 18:48:03</sys_created_on>
+        <sys_id>cae62d13874591103afa986d3fbb355d</sys_id>
+        <sys_name>x_543178_marvel_0.PUBLIC_KEY</sys_name>
+        <sys_package display_value="Marvel App" source="x_543178_marvel_0">d3c49d9f87c191103afa986d3fbb35a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marvel App">d3c49d9f87c191103afa986d3fbb35a9</sys_scope>
+        <sys_update_name>sys_properties_cae62d13874591103afa986d3fbb355d</sys_update_name>
+        <type>string</type>
+        <value>1cfaac837677a79fdff94bfd8e1fced9</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=cae62d13874591103afa986d3fbb355d"/>
+</record_update>
